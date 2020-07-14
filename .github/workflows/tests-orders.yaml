@@ -1,9 +1,13 @@
 name: tests-orders
 
 on:
+<<<<<<< HEAD
   pull_request:
     paths:
       - "orders/**"
+=======
+  pull_request
+>>>>>>> 92994ca98250510240345a0893f498bb11ca35df
 
 jobs:
   build:
