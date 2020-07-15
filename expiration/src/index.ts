@@ -3,6 +3,7 @@ import { natsWrapper } from '@bavjacksontickets/common';
 import { OrderCreatedListener } from './events/listeners/order-created-listener';
 
 const start = async () => {
+  console.log('starting expiration')
   if (!process.env.NATS_CLIENT_ID) {
     throw new Error('Client Id must be defined');
   }
